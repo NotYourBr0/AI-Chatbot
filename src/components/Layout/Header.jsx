@@ -49,18 +49,7 @@ export const Header = ({
 
         {/* Right Section */}
         <div className="flex items-center gap-2">
-          {/* Model Selector */}
-          <div
-            value={selectedModel}
-            onChange={(e) => onModelChange(e.target.value)}
-            className="text-xs bg-gray-50 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500"
-          >
-            {MODELS.map((model) => (
-              <div key={model.id} value={model.id}>
-                Model - {model.name}
-              </div>
-            ))}
-          </div>
+          
 
           {/* Export Chat */}
           {messageCount > 0 && (
